@@ -1,0 +1,64 @@
+//  Foundation for Emails Settings
+//  ------------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Block Grid
+//   4. Typography
+//   5. Button
+//   6. Callout
+//   7. Menu
+//   8. Thumbnail
+
+
+// 1. Global
+// ---------
+.pb0 {
+	padding-bottom: 0!important;
+}
+.mb0 {
+	margin-bottom: 0!important;
+}
+.background-primary {
+	background-color: $primary-color;
+}
+
+// 2. Grid
+// -------
+
+
+// 3. Block Grid
+// -------------
+
+
+// 4. Typography
+// -------------
+.text {
+	color: $medium-gray;
+}
+
+// 5. Button
+// ---------
+
+
+// 6. Callout
+// ----------
+
+
+// 7. Menu
+// -------
+.menu tr {
+	text-align: right;
+}
+.menu-item {
+	display: inline-block;
+
+	&.last {
+		padding-right: 65px!important;
+	}
+}
+
+// 8. Thumbnail
+// ------------

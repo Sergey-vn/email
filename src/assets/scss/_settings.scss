@@ -16,24 +16,24 @@
 // 1. Global
 // ---------
 
-$primary-color: #2199e8;
-$secondary-color: #777777;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
-$light-gray: #f3f3f3;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
-$pre-color: #ff6908;
-$global-width: 580px;
+$primary-color: #eacb3c;
+$secondary-color: #777777; //
+$success-color: #3adb76; //
+$warning-color: #ffae00; //
+$alert-color: #ec5840; //
+$light-gray: #e5e5e5;
+$medium-gray: #889098; 
+$dark-gray: #8a8a8a; //
+$black: #282828;
+$white: #fcfcfc;
+$pre-color: #ff6908; //
+$global-width: 581px;
 $global-width-small: 95%;
-$global-gutter: 16px;
-$body-background: $light-gray;
+$global-gutter: 18px;
+$body-background: $medium-gray;
 $container-background: $white;
-$global-padding: 16px;
-$global-margin: 16px;
+$global-padding: 18px;
+$global-margin: 18px;
 $global-radius: 3px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
@@ -57,22 +57,22 @@ $block-grid-gutter: $global-gutter;
 $global-font-color: $black;
 $body-font-family: Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
-$header-color: inherit;
-$global-line-height: 1.3;
-$global-font-size: 16px;
+$header-color: $black;
+$global-line-height: 1.7;
+$global-font-size: 14px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
-$h1-font-size: 34px;
-$h2-font-size: 30px;
-$h3-font-size: 28px;
-$h4-font-size: 24px;
-$h5-font-size: 20px;
+$h1-font-size: 24px;
+$h2-font-size: 18px;
+$h3-font-size: 18px;
+$h4-font-size: 18px;
+$h5-font-size: 18px;
 $h6-font-size: 18px;
-$header-margin-bottom: 10px;
-$paragraph-margin-bottom: 10px;
-$small-font-size: 80%;
-$small-font-color: $medium-gray;
+$header-margin-bottom: 18px;
+$paragraph-margin-bottom: 18px;
+$small-font-size: 13px;
+$small-font-color: $black;
 $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.6;
 $text-padding: 10px;
@@ -95,23 +95,23 @@ $stat-font-size: 40px;
 // ---------
 
 $button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
+  tiny: 4px 8px 4px 8px,//
+  small: 5px 10px 5px 10px,//
+  default: 10px 25px 10px 25px,
+  large: 12px 38px 12px 38px,
 );
 $button-font-size: (
-  tiny: 10px,
-  small: 12px,
-  default: 16px,
-  large: 20px,
+  tiny: 10px,//
+  small: 12px,//
+  default: 13px,
+  large: 18px,
 );
-$button-color: $white;
-$button-color-alt: $medium-gray;
+$button-color: $black;
+$button-color-alt: $primary-color;
 $button-font-weight: bold;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $primary-color;
-$button-border: 2px solid $button-background;
+$button-border: none;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 
@@ -131,9 +131,9 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 // 7. Menu
 // -------
 
-$menu-item-padding: 10px;
+$menu-item-padding: 13px;
 $menu-item-gutter: 10px;
-$menu-item-color: $primary-color;
+$menu-item-color: $black;
 
 // 8. Thumbnail
 // ------------
