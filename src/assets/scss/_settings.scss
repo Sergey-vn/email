@@ -30,7 +30,7 @@ $pre-color: #ff6908; //
 $global-width: 581px;
 $global-width-small: 95%;
 $global-gutter: 18px;
-$body-background: $medium-gray;
+$body-background: $white;
 $container-background: $white;
 $global-padding: 18px;
 $global-margin: 18px;
@@ -63,7 +63,7 @@ $global-font-size: 14px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
-$h1-font-size: 24px;
+$h1-font-size: 22px;
 $h2-font-size: 18px;
 $h3-font-size: 18px;
 $h4-font-size: 18px;
@@ -97,8 +97,8 @@ $stat-font-size: 40px;
 $button-padding: (
   tiny: 4px 8px 4px 8px,//
   small: 5px 10px 5px 10px,//
-  default: 10px 25px 10px 25px,
-  large: 12px 38px 12px 38px,
+  default: 5px 25px 5px 25px,
+  large: 5px 38px 5px 38px,
 );
 $button-font-size: (
   tiny: 10px,//

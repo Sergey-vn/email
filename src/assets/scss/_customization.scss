@@ -12,6 +12,17 @@
 //   7. Menu
 //   8. Thumbnail
 
+@mixin small () {
+  @media only screen and (max-width: $global-breakpoint ) {
+    @content;
+  }
+}
+
+@mixin large () {
+  @media only screen and (min-width: $global-breakpoint + 1) {
+    @content;
+  }
+}
 
 // 1. Global
 // ---------
@@ -24,10 +35,21 @@
 .background-primary {
 	background-color: $primary-color;
 }
+.background-black {
+	background-color: $black;
+} 
 
 // 2. Grid
 // -------
+.extended-width {
+	margin-left: -($global-padding);
+	margin-right: -($global-padding);
+	width: auto;
 
+	&.row {
+		width: auto!important;
+	}
+}
 
 // 3. Block Grid
 // -------------
@@ -51,12 +73,26 @@
 // -------
 .menu tr {
 	text-align: right;
+
+	td, th {
+		@include small {
+			display: table-cell!important;
+		}
+	}
 }
 .menu-item {
+
 	display: inline-block;
 
 	&.last {
-		padding-right: 65px!important;
+		padding-right: 25px!important;
+	}
+
+	&.first {
+
+		@include small {
+			padding-left: 65px!important;
+		}
 	}
 }
 

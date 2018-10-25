@@ -1,15 +1,3 @@
-@mixin small () {
-  @media only screen and (max-width: $global-breakpoint ) {
-    @content;
-  }
-}
-
-@mixin large () {
-  @media only screen and (min-width: $global-breakpoint + 1) {
-    @content;
-  }
-}
-
 .button {
 	overflow: hidden;
 }
@@ -29,4 +17,53 @@
 			margin: 0 auto; 
 		}		
 	}
+}
+
+.header-block {
+	border-radius: $global-radius;
+	overflow: hidden;
+}
+
+.banner-block {
+	border-radius: 3px;
+	overflow: hidden;
+
+	.columns {
+		padding-bottom: 0;
+	}
+
+	.banner-text {
+		color: $white;
+		padding-left: 20px;
+		padding-right: 20px;
+		line-height: 36px;
+		font-weight: bold;
+		margin: 14px 0;
+
+		@include small {
+			text-align: center;
+		}
+	}
+}
+
+
+
+.news-block {
+	img {
+		border-radius: $global-radius;
+	}
+}
+
+.social-block {
+	border-radius: $global-radius;
+	
+	.menu-item {
+		margin: ($global-margin)/2;
+		line-height: 0;
+
+		img {
+			display: inline-block;
+		}
+	}
+	
 }
